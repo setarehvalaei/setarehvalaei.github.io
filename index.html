@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Setareh | Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f5f4ef;
+      color: #202820;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 28px 24px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e2e6dd;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+    }
+
+    .logo span {
+      color: #315d46;
+    }
+
+    .status {
+      color: #69746a;
+      font-size: 13px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      align-items: center;
+      gap: 70px;
+      padding: 65px 0;
+    }
+
+    .label {
+      color: #315d46;
+      font-size: 13px;
+      font-weight: bold;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 5vw, 66px);
+      line-height: 1.15;
+      letter-spacing: -2px;
+    }
+
+    h1 span {
+      color: #315d46;
+    }
+
+    .description {
+      color: #69746a;
+      line-height: 1.9;
+      font-size: 16px;
+      margin: 24px 0 30px;
+      max-width: 500px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 15px 20px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+    }
+
+    .github {
+      background: #254a36;
+      color: white;
+    }
+
+    .linkedin {
+      color: #202820;
+      background: white;
+      border: 1px solid #e2e6dd;
+    }
+
+    .portrait {
+      width: 100%;
+      max-width: 340px;
+      aspect-ratio: 4 / 4.5;
+      margin: auto;
+      border-radius: 170px 170px 24px 24px;
+      background: #dce8d6;
+      box-shadow: 16px 16px 0 #d7f278;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .portrait svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    .skills {
+      border-top: 1px solid #e2e6dd;
+      padding: 25px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .skills-title {
+      color: #69746a;
+      font-size: 13px;
+      margin-right: 10px;
+    }
+
+    .skill {
+      padding: 10px 15px;
+      border: 1px solid #e2e6dd;
+      border-radius: 30px;
+      background: #fffefa;
+      color: #69746a;
+      font-size: 12px;
+    }
+
+    footer {
+      border-top: 1px solid #e2e6dd;
+      padding: 20px 0;
+      color: #69746a;
+      font-size: 12px;
+    }
+
+    @media (max-width: 760px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        padding: 45px 0;
+      }
+
+      .portrait {
+        max-width: 260px;
+      }
+
+      .hero-content {
+        order: 1;
+      }
+
+      .portrait {
+        order: 0;
+      }
+
+      h1 {
+        font-size: 44px;
+      }
+
+      header {
+        gap: 15px;
+      }
+
+      .status {
+        text-align: right;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="logo">Setareh<span> </span>Valaei</div>
+      <div class="status">Learning · Building · Growing</div>
+    </header>
+
+    <main>
+      <section class="hero">
+
+        <div class="hero-content">
+          <p class="label">ABOUT ME</p>
+
+          <h1>
+            Turning ideas<br>
+            into <span>code.</span>
+          </h1>
+
+          <p class="description">
+            I'm an aspiring developer passionate about Python
+            and software development. I'm building my skills
+            through practical projects, exploring new concepts,
+            and learning something new with every challenge.
+          </p>
+
+          <div class="buttons">
+            <a
+              class="btn github"
+              href="https://github.com/setarehvalaei"
+              target="_blank"
+              rel="noopener noreferrer">
+              GitHub Profile ↗
+            </a>
+
+            <a
+              class="btn linkedin"
+              href="https://www.linkedin.com/in/setareh-valaei-904982444"
+              target="_blank"
+              rel="noopener noreferrer">
+              LinkedIn Profile ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="portrait">
+          <svg viewBox="0 0 300 340"
+               xmlns="http://www.w3.org/2000/svg"
+               role="img"
+               aria-label="Minimal portrait illustration">
+
+            <circle cx="150" cy="140" r="100"
+                    fill="#d7f278" opacity=".65"/>
+
+            <path d="M48 340 Q55 225 150 225
+                     Q245 225 252 340Z"
+                  fill="#496b53"/>
+
+            <rect x="130" y="190" width="40" height="50"
+                  rx="16" fill="#e7b99a"/>
+
+            <ellipse cx="150" cy="135" rx="57" ry="70"
+                     fill="#f4d9c4"/>
+
+            <path d="M93 140
+                     Q72 42 151 45
+                     Q230 43 207 145
+                     L194 115
+                     Q153 108 119 88
+                     Q112 119 93 140Z"
+                  fill="#34463a"/>
+
+            <path d="M125 140 Q136 132 144 140"
+                  stroke="#34463a" stroke-width="3"
+                  fill="none" stroke-linecap="round"/>
+
+            <path d="M158 140 Q170 132 180 140"
+                  stroke="#34463a" stroke-width="3"
+                  fill="none" stroke-linecap="round"/>
+
+            <path d="M137 174 Q150 183 164 174"
+                  stroke="#b77d68" stroke-width="3"
+                  fill="none" stroke-linecap="round"/>
+
+            <path d="M111 238 L150 280 L189 238"
+                  fill="#f5f4ef"/>
+          </svg>
+        </div>
+
+      </section>
+
+      <section class="skills">
+        <span class="skills-title">Exploring</span>
+        <span class="skill">Python</span>
+        <span class="skill">OOP</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">Web Development</span>
+      </section>
+    </main>
+
+    <footer>
+      Built with curiosity and a passion for learning.
+    </footer>
+
+  </div>
+</body>
+</html>
